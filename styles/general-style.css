@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f4471;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.navs {
+  padding: 0 5%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: #0f4471;
+  height: 12vh;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.logo-container {
+  width: 30%;
+}
+.nav-links {
+  width: 70%;
+}
+.nav-links > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav-links > ul > li > a {
+  text-decoration: none;
+  color: #bad7e9;
+  font-size: 1.5rem;
+  position: relative;
+}
+.nav-links > ul > li > a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #bad7e9;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: ease 0.2s;
+}
+.nav-links > ul > li > a:hover::after {
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer > div {
+  width: 33%;
+}
+#footer-logo {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.footer-copyright {
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #bad7e9;
+}
+.footer-copyright > p > a {
+  text-decoration: none;
+  color: #bad7e9;
+  position: relative;
+}
+.footer-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #bad7e9;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: ease 0.2s;
+}
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-socials {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer-socials > a {
+  margin: 0 60px;
+}
+.fa-brands {
+  font-size: 3rem;
+  padding: 10px;
+  color: #bad7e9;
+}
+.fa-brands:hover {
+  color: #0f4471;
+  background-color: #bad7e9;
+  border-radius: 50%;
+  padding: 10px;
+  transition: ease 0.2s;
+}
+.fa-brands:nth-child(2):hover {
+  color: #0f4471;
+  background-color: #bad7e9;
+  border-radius: 20%;
+  padding: 10px;
+  transition: ease 0.2s;
+}
