@@ -1,3 +1,53 @@
 .nav-links > ul > li:nth-child(4) > a::after {
   width: 100%;
 }
+
+.hero {
+  padding: 0 5%;
+  font-family: "Montserrat", sans-serif;
+  color: #bad7e9;
+  margin-bottom: 50px;
+}
+.hero > h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.hero > h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.hero > p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.team-container {
+  padding: 0 5%;
+  font-family: "Montserrat", sans-serif;
+  color: #bad7e9;
+}
+.team > h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.avatar-container {
+}
+.avatar-img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.avatar {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
