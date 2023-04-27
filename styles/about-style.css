@@ -33,21 +33,52 @@
   font-weight: 800;
   margin-bottom: 20px;
 }
-.avatar-container {
-}
+
 .avatar-img-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   margin: 50px 0;
+  margin-bottom: 0px;
 }
 .avatar {
   text-align: center;
   font-size: 1.2rem;
+  border: 1px solid #bad7e9;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: ease 0.2s;
+}
+
+.bot-open {
+  border-bottom: 1px solid #0f4471;
 }
 .avatar-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.person-details {
+  /* transition: ease 0.2s; */
+  border-radius: 20px;
+  margin-top: -1px;
+  font-size: 1.5rem;
+  padding: 5%;
+  border: 1px solid #bad7e9;
+  height: 400px;
+  margin-bottom: 50px;
+}
+#person-1,
+#person-2,
+#person-3,
+#person-4,
+#person-5 {
+  display: none;
+}
+
+.show {
+  display: block !important;
 }
