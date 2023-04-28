@@ -1,8 +1,8 @@
-.nav-links > ul > li:nth-child(2) > a::after {
+.nav-links > ul > li:nth-child(3) > a::after {
   width: 100%;
 }
 .home-body {
-  padding: 0 5%;
+  margin: 0 5%;
   background-color: inherit;
   margin-top: 50px;
 }
