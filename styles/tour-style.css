@@ -7,7 +7,7 @@ hr {
 .hero {
   margin: 0 5%;
 }
-a {
+.back-btn > a {
   text-decoration: none;
   color: #bad7e9;
 }
@@ -344,7 +344,12 @@ input[type="checkbox"] {
   padding: 0 50px;
   /* margin-bottom: 20px; */
 }
-
+.your-plan {
+  background-color: #0f4471;
+}
+.print-are {
+  background-color: #0f4471;
+}
 .place-choice-container > div {
   display: flex;
   flex-direction: row;
@@ -352,4 +357,7 @@ input[type="checkbox"] {
   /* align-items: center; */
   padding: 0 50px;
   /* margin-bottom: 20px; */
+}
+.to-print {
+  padding: 100px;
 }

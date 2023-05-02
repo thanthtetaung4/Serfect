@@ -26,6 +26,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
     <link rel="stylesheet" href="./styles/general-style.css" />
     <link rel="stylesheet" href="./styles/tour-style.css" />
   </head>
@@ -132,16 +136,6 @@
     <div id="before-home"></div>
     <section class="home-body" id="home-body">
       <h2 class="body-content-heading">Tours</h2>
-      <!-- <div class="filter-container">
-       
-        <h2 class="filter-heading">Expend to see the filters!</h2>
-        <div class="filter-see-btn-container">
-          <i class="fa-solid fa-angle-down"></i>
-        </div>
-        <div class="filter">
-          
-        </div>
-      </div> -->
       <div class="body-container">
         <div class="body-content">
           <div class="body-content-img-container">
@@ -189,10 +183,12 @@
             </p>
           </div>
         </div>
+
         <div class="body-content">
           <div class="body-content-img-container">
-            <a href="./howto-1.html">
+            <a href="./tourplan-3.html">
               <img
+                src="./images/for-200package.jpg"
                 src="./images/body-dummy-img.png"
                 alt=""
                 class="body-content-img"
@@ -200,15 +196,39 @@
             </a>
           </div>
           <div class="body-content-text-container">
-            <h3>How to</h3>
+            <h3>Standard Package</h3>
+
             <p class="body-content-text">
-              Tour websites hardly have this function included. But we make an
-              effort, gather information, and do our best for your traveling
-              comfort. This explains how to create an SMRT card as well as what
-              sims to buy, what to bring with you to Singapore, and other
-              topics.&nbsp;<a href="./article-2.html" class="content-more"
+              This 5-day itinerary offers a glimpse into the diverse attractions
+              and experiences Singapore has to offer, from shopping on Orchard
+              Road to relaxing on East Coast Park's beaches. Get ready to
+              explore and savor the flavors of this vibrant city. &nbsp;<a
+                href="./tourplan-3.html"
+                class="content-more"
                 >See more</a
               >
+            </p>
+          </div>
+        </div>
+        <div class="body-content">
+          <div class="body-content-img-container">
+            <a href="./tourplan-4.html">
+              <img
+                src="./images/for-3000-package.jpg"
+                alt=""
+                class="body-content-img"
+              />
+            </a>
+          </div>
+          <div class="body-content-text-container">
+            <h3>Premium Package</h3>
+            <p class="body-content-text">
+              Discover the best of Singapore with Serfect's 5 days 4 nights
+              package. For just $3000, stay at the luxurious Siloso Beach Resort
+              Sentosa, indulge in Michelin-starred meals, visit iconic
+              landmarks, experience thrilling attractions, go shopping, and
+              immerse yourself in Singapore's vibrant culture. &nbsp;
+              <a href="./tourplan-4.html" class="content-more">See more</a>
             </p>
           </div>
         </div>
@@ -893,40 +913,42 @@
                   </div>
                 </div>
 
-                <div class="your-plan">
-                  <h2>Your Plan</h2>
-                  <div class="customize-plan-container">
-                    <div class="chosen-container">
-                      <div class="chosen-hotel">
-                        <h3 class="choice-heading">Chosen Hotel</h3>
-                        <p id="chosen-hotel">Hotel Calmo Chinatown</p>
+                <div class="print-area">
+                  <div class="your-plan">
+                    <h2>Your Plan</h2>
+                    <div class="customize-plan-container">
+                      <div class="chosen-container">
+                        <div class="chosen-hotel">
+                          <h3 class="choice-heading">Chosen Hotel</h3>
+                          <p id="chosen-hotel">Hotel Calmo Chinatown</p>
+                        </div>
+                        <div class="chosen-restaurant">
+                          <h3 class="choice-heading">Chosen Restaurants</h3>
+                          <p id="chosen-restaurant">No Restaurant Chosen</p>
+                        </div>
+                        <div class="chosen-place">
+                          <h3 class="choice-heading">Chosen Place</h3>
+                          <p id="chosen-place">No Place Chosen</p>
+                        </div>
                       </div>
-                      <div class="chosen-restaurant">
-                        <h3 class="choice-heading">Chosen Restaurants</h3>
-                        <p id="chosen-restaurant">No Restaurant Chosen</p>
-                      </div>
-                      <div class="chosen-place">
-                        <h3 class="choice-heading">Chosen Place</h3>
-                        <p id="chosen-place">No Place Chosen</p>
-                      </div>
-                    </div>
-                    <div class="cost-container">
-                      <div class="cost">
-                        <h3 class="cost-heading">Hotel Cost</h3>
-                        <div><span id="hotel-cost">118</span>$</div>
-                      </div>
-                      <div class="cost">
-                        <h3 class="cost-heading">Restaurant Cost</h3>
-                        <div><span id="restaurant-cost">0</span>$</div>
-                      </div>
-                      <div class="cost">
-                        <h3 class="cost-heading">Place Cost</h3>
-                        <div><span id="place-cost">0</span>$</div>
-                      </div>
-                      <hr class="cost-divider" />
-                      <div class="cost">
-                        <h3 class="cost-heading">Total Cost</h3>
-                        <div><span id="total-cost">118</span>$</div>
+                      <div class="cost-container">
+                        <div class="cost">
+                          <h3 class="cost-heading">Hotel Cost</h3>
+                          <div><span id="hotel-cost">118</span>$</div>
+                        </div>
+                        <div class="cost">
+                          <h3 class="cost-heading">Restaurant Cost</h3>
+                          <div><span id="restaurant-cost">0</span>$</div>
+                        </div>
+                        <div class="cost">
+                          <h3 class="cost-heading">Place Cost</h3>
+                          <div><span id="place-cost">0</span>$</div>
+                        </div>
+                        <hr class="cost-divider" />
+                        <div class="cost">
+                          <h3 class="cost-heading">Total Cost</h3>
+                          <div><span id="total-cost">118</span>$</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -941,7 +963,7 @@
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary" id="pdfButton">
+              <button type="button" class="btn btn-primary" id="pdf-button">
                 Download
               </button>
             </div>
