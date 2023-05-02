@@ -49,7 +49,7 @@ body {
   z-index: 99;
   width: 100%;
   background-color: #0f4471;
-  height: 12vh;
+  height: 94px;
 }
 .nav-bar {
   display: flex;
@@ -65,12 +65,14 @@ body {
 .nav-links > ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between !important;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .nav-button {
   text-decoration: none;
-  color: #bad7e9;
+  color: #bad7e9 !important;
   font-family: "montserrat", sans-serif;
   font-size: 1.7rem;
   position: relative;

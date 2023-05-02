@@ -19,3 +19,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+const backBtn = document.querySelector(".back-btn");
+backBtn.addEventListener("click", goBack);
+function goBack() {
+  window.history.back();
+}
