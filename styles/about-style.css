@@ -43,6 +43,8 @@
   margin-bottom: 0px;
 }
 .avatar {
+  width: 200px;
+  height: 223.6px;
   text-align: center;
   font-size: 1.2rem;
   border: 1px solid #bad7e9;
