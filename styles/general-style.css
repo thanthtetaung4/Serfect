@@ -6,6 +6,7 @@
 }
 hr {
   margin-top: 50px;
+  color: #bad7e9;
 }
 html {
   scroll-behavior: smooth;
@@ -74,7 +75,7 @@ body {
   text-decoration: none;
   color: #bad7e9 !important;
   font-family: "montserrat", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   position: relative;
   font-weight: 800;
 }

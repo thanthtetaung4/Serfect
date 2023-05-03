@@ -15,12 +15,12 @@ a {
   margin-bottom: 50px;
 }
 .back-btn {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: #0f4471;
   border: 1px solid #bad7e9;
   color: #bad7e9;
-  width: 200px;
-  padding: 20px;
+  width: 100px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -34,7 +34,7 @@ a {
 }
 .article-body-main-heading {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 600;
   margin: 30px 0;
 }
 .fa-arrow-left {
@@ -49,18 +49,21 @@ a {
   height: 80%;
   object-fit: cover;
 }
+.welcome {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
 .article-body-heading {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin: 30px 0;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 .article-body-txt {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: justify;
 }
 .article-body-para {
-  margin: 30px 0;
-  font-size: 2rem;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
 }
 
 #myBtn {
@@ -93,6 +96,8 @@ a {
   width: 600px;
 }
 .package-description > li {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 20% 20% 50%;
 }
