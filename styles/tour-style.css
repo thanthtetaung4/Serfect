@@ -296,8 +296,7 @@ label {
   grid-template-columns: 50% 50%;
   /* margin-top: 50px; */
 }
-.cost-container {
-}
+
 .cost {
   padding: 0 20px;
   display: flex;
@@ -322,9 +321,6 @@ input[type="checkbox"] {
 .chosen-place > p {
   font-size: 1.3rem;
   margin-top: 22px;
-}
-
-#cost-label {
 }
 
 .hotel-choices > div {
