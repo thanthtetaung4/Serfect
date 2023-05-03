@@ -17,7 +17,7 @@ h3 {
 .scroll-down-arrow {
   text-align: center;
 }
-.scroll-down-arrow span {
+g .scroll-down-arrow span {
   display: inline-block;
 }
 .scroll-down-arrow i {
