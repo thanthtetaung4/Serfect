@@ -101,3 +101,29 @@ a {
   display: grid;
   grid-template-columns: 20% 20% 50%;
 }
+
+.img-gallery {
+  margin: 0 5%;
+  color: #bad7e9;
+  font-family: "Monsterrat", sans-serif;
+}
+
+#brochure-download {
+  font-size: 1.2rem;
+  background-color: #0f4471;
+  border: 1px solid #bad7e9;
+  color: #bad7e9;
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  transition: ease 0.2s;
+  margin-bottom: 20px;
+}
+
+#brochure-download:hover {
+  background-color: #bad7e9;
+  color: #0f4471;
+}

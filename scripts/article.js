@@ -24,3 +24,13 @@ backBtn.addEventListener("click", goBack);
 function goBack() {
   window.history.back();
 }
+
+function downloadBrochure() {
+  var url = "../pdf/brochure.pdf"; // Replace with the URL of your brochure
+  var link = document.createElement("a");
+  link.download = "brochure.pdf"; // Replace with the desired name of your brochure file
+  link.href = url;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
