@@ -7,7 +7,10 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -26,9 +29,9 @@ function goBack() {
 }
 
 function downloadBrochure() {
-  var url = "./Brochure.pdf"; // Replace with the URL of your brochure
+  var url = "./Brochure.pdf";
   var link = document.createElement("a");
-  link.download = "brochure.pdf"; // Replace with the desired name of your brochure file
+  link.download = "brochure.pdf";
   link.href = url;
   document.body.appendChild(link);
   link.click();
