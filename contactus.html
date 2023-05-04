@@ -135,6 +135,12 @@
                 );
               }
             );
+          emailjs.send("service_n7rfx28", "template_tyl7ea9", {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+            subject: subject.toString(),
+          });
         });
     </script>
   </body>
